@@ -20,3 +20,4 @@ namespace Catalog.API.Data
         public IMongoCollection<Product> Products { get; }
     }
 }
+ 
