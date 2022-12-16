@@ -135,6 +135,8 @@ services:
       - "8010:80"
 
 
+
+
   shopping.aggregator:
     container_name: shopping.aggregator
     environment:

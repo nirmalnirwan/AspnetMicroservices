@@ -38,7 +38,7 @@ namespace Shopping.Aggregator.Controllers
                 item.Summary = product.Summary;
                 item.Description = product.Description;
                 item.ImageFile = product.ImageFile;
-            }
+            }            
 
             var orders = await _orderService.GetOrdersByUserName(userName);
 
@@ -48,7 +48,7 @@ namespace Shopping.Aggregator.Controllers
                 BasketWithProducts = basket,
                 Orders = orders
             };
-
+            
             return Ok(shoppingModel);
         }
 
